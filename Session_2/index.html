@@ -6,11 +6,30 @@
     <title>Document</title>
   </head>
   <body>
+    <h2>Add New User</h2>
     <form action="/addUser" method="POST">
       <input type="text" name="firstName" placeholder="First Name" />
       <input type="text" name="lastName" placeholder="Last Name" />
       <input type="text" name="regNumber" placeholder="Reg. Number" />
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Add" />
+    </form>
+    <h2>Delete a User</h2>
+    <form action="/deleteUser" method="POST">
+      <input type="text" name="firstName" placeholder="First Name" />
+      <input type="text" name="lastName" placeholder="Last Name" />
+      <input type="text" name="regNumber" placeholder="Reg. Number" />
+      <input type="submit" value="Delete" />
+    </form>
+    <h2>Update a User</h2>
+    <form action="/updateUser" method="POST">
+      <input type="text" name="firstName" placeholder="First Name" />
+      <input type="text" name="lastName" placeholder="Last Name" />
+      <input type="text" name="regNumber" placeholder="Reg. Number" />
+      <br />
+      <input type="text" name="newFirstName" placeholder="First Name" />
+      <input type="text" name="newLastName" placeholder="Last Name" />
+      <input type="text" name="newRegNumber" placeholder="Reg. Number" />
+      <input type="submit" value="Update" />
     </form>
   </body>
 </html>
